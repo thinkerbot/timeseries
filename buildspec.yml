@@ -1,0 +1,10 @@
+version: 0.1
+      
+phases:
+  pre_build:
+    commands:
+      - git submodule init
+      - git submodule update
+  build:
+    commands:
+      - ./test/suite
